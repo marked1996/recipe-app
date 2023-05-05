@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 function Category() {
   return (
     <section>
-      <ul className="flex items-center justify-center gap-12">
+      <ul className="flex items-center justify-center gap-12 mb-16">
         <li>
           <NavLink
             to={"/cuisine/Italian"}

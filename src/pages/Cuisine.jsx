@@ -21,16 +21,14 @@ function Cuisine() {
   useEffect(() => {
     getCuisine(params.type);
     console.log(params.type);
+    console.log(cuisine);
   }, [params.type]);
 
   return (
-    <section className="grid gap-14 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <section className="grid gap-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {cuisine.map((recipe) => {
         return (
-          <article
-            key={recipe.id}
-            className="bg-cover rounded-xl md:rounded-2xl lg:rounded-3xl "
-          >
+          <article className="bg-cover rounded-xl md:rounded-2xl lg:rounded-3xl ">
             <div className="img-wrapper w-full h-auto object-cover rounded-xl md:rounded-2xl lg:rounded-3x overflow-hidden shadow-md">
               <img
                 src={recipe.image}
